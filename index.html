@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Not another business club - a different kind of networking event for decision makers in the Copenhagen area</title>
+        <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,700|M+PLUS+Rounded+1c:100,300,400,900&display=swap" rel="stylesheet">
+        <!-- https://coolors.co/577590-86e7b8-ebf2fa-114b5f-fcfc62 -->
+        <style type="text/css">
+            body {
+                margin: 0;
+                border: 16px solid #114b5f;
+            }
+            main {
+                height: calc(100vh - 32px);
+                box-sizing: border-box;
+                background: #ebf2fa;
+                font-family: 'M PLUS Rounded 1c', sans-serif;
+                font-size: 1.05em;
+                overflow-y: auto;
+                position: relative;
+                overflow-x: hidden;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.25em;
+            }
+            h1, h2 {
+                font-family: 'Advent Pro', sans-serif;
+                margin-top: 0.5em;
+                margin-bottom: 0;
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 1em;
+            }
+            .intro {
+                min-height: calc(100vh - 32px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 200px 20px 75px;
+                box-sizing: border-box;
+                position: relative;
+                z-index: 2;
+            }
+            .intro:after {
+                content: '';
+                position: absolute;
+                bottom: 0px;
+                left: -350px;
+                width: 450px;
+                height: 450px;
+                background: #86e7b8;
+                border-radius: 100%;
+                z-index: -1;
+            }
+            .intro > h1 {
+                font-weight: 300;
+                font-size: 4em;
+                margin: 0;
+                margin-bottom: 0.8em;
+                z-index: 2;
+            }
+            .intro > h1:before {
+                content: '';
+                position: absolute;
+                right: -300px;
+                top: -350px;
+                width: 800px;
+                height: 800px;
+                background: #86e7b8;
+                border-radius: 100%;
+                z-index: -1;
+            }
+            .intro > h1:after {
+                content: '';
+                position: absolute;
+                right: 300px;
+                top: -450px;
+                width: 600px;
+                height: 600px;
+                background: #fcfc62;
+                border-radius: 100%;
+                z-index: -2;
+            }
+            .intro .subtitle {
+                color: #114b5f;
+                font-size: 1.3em;
+                font-weight: 300;
+                position: relative;
+                z-index: 3;
+            }
+            .intro .selling-points {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 75px;
+            }
+            .intro .selling-points .selling-point {
+                flex-basis: 200px;
+                flex-shrink: 0;
+                flex-grow: 1;
+                max-width: 450px;
+                margin: 50px;
+            }
+            .intro .selling-points .selling-point > h1 {
+                transform: translateX(-24px);
+                font-size: 1.4em;
+            }
+            .details {
+                background: #114b5f;
+                color: #ebf2fa;
+                padding: 100px 0;
+            }
+            .details > article {
+                max-width: 500px;
+                margin-bottom: 50px;
+            }
+            .details > article:nth-child(2) {
+                margin-left: 150px;
+            }
+            .details > article:nth-child(3) {
+                margin-left: 300px;
+            }
+            .details a {
+                color: #86e7b8;
+            }
+            .sponsors {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 150px;
+            }
+            .sponsors > h1 {
+                font-size: 2em;
+                z-index: 2;
+                color: #114b5f;
+                margin: 2em;
+            }
+            .sponsors > h1:before {
+                content: '';
+                content: '';
+                position: absolute;
+                right: calc(100vh - 300px - 16px);
+                top: -450px;
+                width: 600px;
+                height: 600px;
+                background: #fcfc62;
+                border-radius: 100%;
+                z-index: -1;
+            }
+            .sponsors > p {
+                max-width: 500px;
+                z-index: 2;
+            }
+            .sponsor-list a {
+                border: none;
+                text-decoration: none;
+                display: inline-block;
+                margin: 75px 25px;
+                background: #577590;
+                transition: background-color 0.4s;
+            }
+            .sponsor-list a:hover {
+                background: #114b5f;
+            }
+            .sponsor-list img {
+                width: 400px;
+                height: 120px;
+                object-fit: contain;
+            }
+            .copyright {
+                background: #114b5f;
+                color: #ebf2fa;
+                font-size: 0.7em;
+                padding-top: 2em;
+            }
+            .copyright > p {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="intro">
+                <h1>Not another business club</h1>
+                <div class="subtitle">A different kind of networking event for decision makers in the Copenhagen area.</div>
+                <div class="selling-points">
+                    <div class="selling-point">
+                        <h1>a) A break from everyday routine</h1>
+                        <p>
+                            At the end of your work day, meet people who are not caught up in your everyday work life, and get a new perspective on the work you are doing.
+                        </p>
+                        <p>
+                            Each event has an <strong>inspiring talk or setting</strong> that helps you zoom out and regain focus on what is important in your work life.
+                        </p>
+                        <p>
+                            We are here to make sure you stay in balance, and to help you keep a sustainable pace.
+                        </p>
+                    </div>
+                    <div class="selling-point">
+                        <h1>b) A network with other businesses</h1>
+                        <p>
+                            If you are looking for inspiration, or if you are stuck in your business, each event provides you an opportunity of becoming unstuck.
+                        </p>
+                        <p>
+                            All attendees are <strong>decision makers</strong> in businesses, and through networking you can find customers, solutions or contractors&mdash;as well as information about pitfalls in other industries, and what to avoid when interacting with them.
+                        </p>
+                        <p>
+                            We are here to help each other succeed.
+                        </p>
+                    </div>
+                    <div class="selling-point">
+                        <h1>c) A shot of energy from the outdoors</h1>
+                        <p>
+                            Every event takes place outdoors and includes some activity, like a campfire, kayaking, or tree climbing.
+                            You get to move, you <strong>get new energy</strong>, and you leave the event feeling refreshed.
+                        </p>
+                        <p>
+                            Physical exercise and doing something concrete lets your brain work in a different way, and helps find peace in the middle of work day stress.
+                        </p>
+                        <p>
+                            We are here to kickstart your brain.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="details">
+                <article>
+                    <h1>Let's get concrete...</h1>
+                    <p>
+                        <em>Not another business club</em> is... well... a business club.
+                        It is an organization that plans and executes meetings for decision makers in various businesses across all industries.
+                        That is, owners, CEOs, directors, middle managers with a budget, and other people who are in a position to make business decisions in their business.
+                    </p>
+                    <p>
+                        Bringing a group of decision makers together means things can happen.
+                        After all, it's a business club, so it is about business&mdash;and decision makers make business happen.
+                    </p>
+                    <p>
+                        The meetings take place around the end of a work day, somewhere in the Copenhagen area (usually relatively central), so it's easy to drop by on your way home from the office.
+                        There will always be snacks available, so you don't starve.
+                    </p>
+                    <p>
+                        Wearing a tie is optional.
+                    </p>
+                </article>
+                <article>
+                    <h1>Where's the small print?</h1>
+                    <p>
+                        A membership costs 500 DKK annually.
+                        As a member of the business club you get invited to 2-4 networking events with speakers and activities annually.
+                        And you get to bring up to two guests for each event, too.
+                    </p>
+                    <p>
+                        If you are interested in a membership, contact us at <a href="mailto:business-club@deranged.dk?subject=[Not another business club] Request for membership" target="_blank" rel="noopener">business-club@deranged.dk</a>, and we will set you up.
+                    </p>
+                </article>
+                <article>
+                    <h1>Join us (for free) for the first meeting</h1>
+                    <p>
+                        We are just about launching the business club.
+                        This means there is a unique opportunity for you to get the <em>Not another business club</em> experience <strong>free of charge</strong>!
+                    </p>
+                    <p>
+                        The event will take place [date] [time] [place].
+                    </p>
+                    <p>
+                        If you are interested in joining, get on the attendee list by emailing us at <a href="mailto:business-club@deranged.dk?subject=[Not another business club] First meeting" target="_blank" rel="noopener">business-club@deranged.dk</a>.
+                    </p>
+                </article>
+            </section>
+            <section class="sponsors">
+                <h1>Sponsors</h1>
+                <p>
+                    The membership fee doesn't cover the costs involved in running the club.
+                    Most of it is funded with time and money donated by these sponsors:
+                </p>
+                <div class="sponsor-list">
+                    <a href="https://udpaatur.com/"><img src="/assets/udpaatur-logo.png"></a>
+                    <a href="https://deranged.dk/"><img src="/assets/deranged-logo.png"></a>
+                </div>
+            </section>
+            <section class="copyright">
+                <p>Not another business club is arranged by deranged (CVR 35695583) and Ud på tur (CVR 40296786).</p>
+                <p>&copy; deranged & Ud på tur 2019. All rights reserved.</p>
+            </section>
+        </main>
+    </body>
+</html>
