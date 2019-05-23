@@ -9,17 +9,26 @@
         <style type="text/css">
             body {
                 margin: 0;
-                border: 16px solid #114b5f;
             }
             main {
-                height: calc(100vh - 32px);
                 box-sizing: border-box;
                 background: #ebf2fa;
                 font-family: 'M PLUS Rounded 1c', sans-serif;
                 font-size: 1.05em;
-                overflow-y: auto;
                 position: relative;
                 overflow-x: hidden;
+                border-left: 16px solid #114b5f;
+                border-right: 16px solid #114b5f;
+            }
+            main:before {
+                content: '';
+                position: fixed;
+                height: 16px;
+                background: #114b5f;
+                left: 0;
+                top: 0;
+                right: 0;
+                z-index: 100;
             }
             h1 {
                 font-size: 1.5em;
